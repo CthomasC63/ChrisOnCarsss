@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Perfect Car - Crowfoot Dodge Chrysler</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #004a99;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 1px;
+        }
+        .header p {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .form-section {
+            background-color: white;
+            padding: 40px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .form-section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .form-section label {
+            font-size: 1.1em;
+            margin-top: 10px;
+            display: block;
+            color: #555;
+        }
+        .form-section input, .form-section select, .form-section textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-section input[type="submit"] {
+            background-color: #004a99;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 15px;
+            font-size: 1.2em;
+        }
+        .form-section input[type="submit"]:hover {
+            background-color: #003366;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #004a99;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Find Your Next Vehicle</h1>
+        <p>Credit Approvals Made Easy! Lets find you the perfect car that fits your budget and lifestyle.</p>
+    </div>
+
+    <div class="form-section">
+        <h2>Tell Us About Yourself</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="message">Message or Notes</label>
+            <textarea id="message" name="message" rows="4" placeholder="What can we help you find?"></textarea>
+
+            <h2>Current Vehicle</h2>
+            <label for="current-vehicle">What are you currently driving?</label>
+            <input type="text" id="current-vehicle" name="current_vehicle" placeholder="Make, Model, Year">
+
+            <h2>New Vehicle Preferences</h2>
+            <label for="vehicle-type">What Type of Vehicle Are You Interested In?</label>
+            <select id="vehicle-type" name="vehicle_type">
+                <option value="SUV">SUV</option>
+                <option value="Truck">Truck</option>
+                <option value="Sedan">Sedan</option>
+                <option value="Van">Van</option>
+                <option value="Coupe">Coupe</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="new-used">New or Used?</label>
+            <select id="new-used" name="new_used">
+                <option value="New">New</option>
+                <option value="Used">Used</option>
+                <option value="Either">Either</option>
+            </select>
+
+            <label for="budget">Bi-Weekly Budget</label>
+            <input type="number" id="budget" name="budget" placeholder="Enter your bi-weekly budget" min="0" required>
+
+            <input type="submit" value="Get Started">
+        </form>
+    </div>
+</div>
+
+<div class="footer">
+    <p>&copy; 2024 ChrisOnCars</p>
+</div>
+
+</body>
+</html>
